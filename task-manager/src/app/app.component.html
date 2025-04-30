@@ -1,0 +1,30 @@
+<div class="container">
+  <h2>My Tasks</h2>
+  <p class="stats">{{ completionStats }}</p>
+  
+  <div class="filters">
+    <button [class.active]="selectedFilter === 'All'" (click)="selectedFilter = 'All'; refreshTaskList()">All</button>
+    <button [class.active]="selectedFilter === 'Personal'" (click)="selectedFilter = 'Personal'; refreshTaskList()">Personal</button>
+    <button [class.active]="selectedFilter === 'Work'" (click)="selectedFilter = 'Work'; refreshTaskList()">Work</button>
+    <button [class.active]="selectedFilter === 'Shopping'" (click)="selectedFilter = 'Shopping'; refreshTaskList()">Shopping</button>
+    <button [class.active]="selectedFilter === 'Other'" (click)="selectedFilter = 'Other'; refreshTaskList()">Other</button>
+    <button [class.active]="selectedFilter === 'High Priority'" (click)="selectedFilter = 'High Priority'; refreshTaskList()">High Priority</button>
+    <button [class.active]="selectedFilter === 'Medium Priority'" (click)="selectedFilter = 'Medium Priority'; refreshTaskList()">Medium Priority</button>
+    <button [class.active]="selectedFilter === 'Low Priority'" (click)="selectedFilter = 'Low Priority'; refreshTaskList()">Low Priority</button>
+  </div>
+
+  <app-task-list 
+    [filter]="selectedFilter" 
+    #taskListComponent>
+  </app-task-list>
+  <div class="task-form-container">
+    <input 
+      type="text" 
+      placeholder="Add New Task" 
+      (click)="showForm = true" 
+      readonly
+    >
+    <button (click)="showForm = true">+</button>
+    <app-task-form *ngIf="showForm" (formClosed)="showForm = false; refreshTaskList()"></app-task-form>
+  </div>
+</div>

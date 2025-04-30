@@ -1,0 +1,30 @@
+
+<div class="video-detail-container">
+  <div class="video-container"><iframe [src]="safeUrl" width="100%" height="315" class="video-iframe" allowfullscreen></iframe>
+    
+  </div>
+
+  <form class="video-detail-form mt-4">
+    <div *ngIf="editTitle" class="form-group">
+      <input class="form-control" name="title" [(ngModel)]="video.title" required placeholder="Title">
+    </div>
+    <h3 *ngIf="!editTitle" (click)="onTitleClick()" class="video-title">{{ video.title }}</h3>
+
+    <div class="form-group">
+      <input class="form-control" name="url" [(ngModel)]="video.url" required placeholder="Video URL">
+    </div>
+
+    <div class="form-group">
+      <textarea class="form-control" name="description" [(ngModel)]="video.description" required placeholder="Description"></textarea>
+    </div>
+
+    <div class="button-container">
+      <button type="button" (click)="updateVideo()" class="btn btn-primary">Update</button>
+      <button type="button" (click)="deleteVideo()" class="btn btn-danger">Delete</button>
+    </div>
+  </form>
+
+  <ng-template #noVideo>
+    <p>No video selected</p>
+  </ng-template>
+</div>

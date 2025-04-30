@@ -1,0 +1,36 @@
+<section class="about-hero">
+    <div class="about-content">
+      <h1 class="about-title">About Me</h1>
+      <p class="about-subtitle">
+        Hi, I'm Swetha Sri, passionate software developer crafting elegant, user-friendly applications with a touch of creativity.
+      </p>
+    </div>
+    <div class="background-decor">
+      <div class="decor decor1"></div>
+      <div class="decor decor2"></div>
+      <div class="decor decor3"></div>
+    </div>
+  </section>
+  
+  <section class="skills-section">
+    <h2 class="section-title">My Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card" *ngFor="let skill of skills">
+        <i class="fas fa-code skill-icon"></i>
+        <h3>{{ skill.name }}</h3>
+        <p>{{ skill.description }}</p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="timeline-section">
+    <h2 class="section-title">My Journey</h2>
+    <div class="timeline">
+      <div class="timeline-item" *ngFor="let event of timeline">
+        <div class="timeline-content">
+          <h3>{{ event.year }}</h3>
+          <p>{{ event.description }}</p>
+        </div>
+      </div>
+    </div>
+  </section>

@@ -1,0 +1,64 @@
+<section class="contact-hero">
+    <div class="hero-content">
+      <h1 class="hero-title">Get in Touch</h1>
+      <p class="hero-subtitle">
+        I’d love to hear from you! Whether it’s about a project, collaboration, or just a friendly chat, let’s connect.
+      </p>
+    </div>
+    <div class="background-decor">
+      <div class="decor decor1"></div>
+      <div class="decor decor2"></div>
+      <div class="decor decor3"></div>
+    </div>
+  </section>
+  
+  <section class="contact-section">
+    <div class="contact-container">
+      <div class="contact-form">
+        <h2 class="section-title">Send a Message</h2>
+        <form (ngSubmit)="submitForm()">
+          <div class="form-group">
+            <input
+              type="text"
+              [(ngModel)]="contactForm.name"
+              name="name"
+              placeholder="Your Name"
+              required
+            >
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              [(ngModel)]="contactForm.email"
+              name="email"
+              placeholder="Your Email"
+              required
+            >
+          </div>
+          <div class="form-group">
+            <textarea
+              [(ngModel)]="contactForm.message"
+              name="message"
+              placeholder="Your Message"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="submit-button">Send Message</button>
+        </form>
+      </div>
+      <div class="social-links">
+        <h2 class="section-title">Connect with Me</h2>
+        <div class="social-grid">
+          <a
+            *ngFor="let link of socialLinks"
+            [href]="link.url"
+            target="_blank"
+            class="social-link"
+          >
+            <i [class]="link.icon"></i>
+            <span>{{ link.name }}</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>

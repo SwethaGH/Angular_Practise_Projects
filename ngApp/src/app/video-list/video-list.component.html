@@ -1,0 +1,5 @@
+<ul class="video-list">
+  <li *ngFor="let video of videos" (click)="select(video)" class="video-item">
+    {{ video.title }}
+  </li>
+</ul>

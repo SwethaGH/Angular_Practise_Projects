@@ -1,0 +1,43 @@
+/* General styles for the list */
+.video-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Style for each video list item */
+  .video-item {
+    background-color: #f8f9fa;  /* Light background for each item */
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;  /* Rounded corners */
+    font-size: 18px;     /* Font size */
+    font-weight: 600;    /* Make the title bolder */
+    color: #333;         /* Dark text for readability */
+    cursor: pointer;    /* Pointer cursor on hover */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Subtle shadow for 3D effect */
+  }
+  
+  /* Hover effect for video items */
+  .video-item:hover {
+    background-color: #007bff;  /* Change background on hover */
+    color: white;               /* Change text color on hover */
+    transform: translateY(-5px); /* Lift the item slightly */
+    box-shadow: 0 8px 12px rgba(0,0,0,0.15); /* Increase shadow on hover */
+  }
+  
+  /* Active state for the selected video */
+  .video-item.active {
+    background-color: #28a745;  /* Green background for active selection */
+    color: white;               /* White text for active item */
+  }
+  
+  /* Responsive design: Ensure the list looks good on small screens */
+  @media (max-width: 768px) {
+    .video-item {
+      font-size: 16px;  /* Smaller font size on mobile */
+      padding: 12px;    /* Reduced padding on mobile */
+    }
+  }
+  

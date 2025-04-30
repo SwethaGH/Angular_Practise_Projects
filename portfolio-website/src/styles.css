@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  .navbar.scrolled {
+    padding: 0.5rem 2rem;
+  }

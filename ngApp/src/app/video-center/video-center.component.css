@@ -1,0 +1,178 @@
+/* Container for video center section */
+.row {
+    margin-top: 30px;
+  }
+  
+  /* Styling for the New Video form */
+  .well {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2.text-center {
+    font-size: 28px;
+    font-weight: 600;
+    color: #007bff;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  /* Input fields and button */
+  .form-control {
+    font-size: 16px;
+    padding: 10px;
+  }
+  
+  button.btn-success {
+    font-size: 16px;
+    padding: 10px;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  button.btn-success:hover {
+    background-color: #218838;
+  }
+  
+  /* Styling for the video list and selected video section */
+  .video-list-container {
+    padding: 15px;
+  }
+  
+  .video-list-container ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .video-list-container li {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .video-list-container li:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  /* Video list title */
+  h3.video-list-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #343a40;
+    margin-bottom: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .col-sm-6 {
+      width: 100%;
+    }
+  
+    .well {
+      margin-bottom: 20px;
+    }
+  
+    button.btn-success {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+  /* Video List Section */
+.video-list-container {
+  padding: 15px;
+  background: linear-gradient(135deg, #e8f0fe 0%, #f4f6f8 100%); /* Subtle gradient */
+  border-radius: 8px;
+  min-height: 200px; /* Ensure enough space for empty state */
+}
+
+/* Card styling for video list section */
+.video-list-container .card {
+  background-color: transparent; /* Ensure card doesn't override the gradient */
+  border: none; /* Remove default card border for seamless look */
+}
+
+/* Video list items */
+.video-list-container ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.video-list-container li {
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  background-color: #ffffff; /* White background for list items to contrast with gradient */
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.video-list-container li:hover {
+  background-color: #1a73e8; /* Blue hover effect */
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Optional: Empty state for video list */
+.video-list-container .empty-state {
+  text-align: center;
+  color: #6c757d;
+  font-size: 16px;
+  padding: 20px;
+}
+/* Text-center container */
+.text-center {
+  text-align: center; /* Center content horizontally */
+  padding: 20px 0; /* Vertical padding */
+  margin-bottom: 30px; /* Space below section */
+}
+
+/* Main Heading */
+.main-heading {
+  font-size: 32px; /* Clear and prominent */
+  font-weight: 700; /* Bold */
+  color: #1a73e8; /* Blue to match theme */
+  background-color: #ffffff; /* White background */
+  border-radius: 8px; /* Subtle rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+  padding: 15px 30px; /* Compact padding */
+  margin: 0; /* Remove default margin */
+  display: inline-block; /* Fit content width */
+}
+
+/* Subtitle */
+.text-muted {
+  font-size: 16px; /* Readable size */
+  color: #6c757d; /* Muted gray */
+  margin-top: 8px; /* Tight spacing */
+  max-width: 500px; /* Limit width */
+  display: inline-block; /* Center with text-align */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-heading {
+    font-size: 24px; /* Smaller for mobile */
+    padding: 10px 20px; /* Compact padding */
+  }
+
+  .text-muted {
+    font-size: 14px; /* Smaller subtitle */
+    max-width: 80%; /* Fit mobile screens */
+  }
+
+  .text-center {
+    padding: 15px 0; /* Reduce padding */
+    margin-bottom: 20px; /* Reduce margin */
+  }
+}

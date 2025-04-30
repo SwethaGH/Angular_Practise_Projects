@@ -1,0 +1,198 @@
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.stats {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.filters button {
+  padding: 5px 10px;
+  margin-right: 25px;
+  border: none;
+  background: #e0e0e0;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.filters button.active {
+  background: #6b46c1;
+  color: white;
+}
+
+.task-list {
+  border: 1px dashed #ccc;
+  padding: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  min-height: 100px;
+}
+
+.task-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.task-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
+
+.task-list input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.task-list .completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.task-list .due-date {
+  margin-left: auto;
+  color: #666;
+}
+
+.task-list .category {
+  margin-left: 10px;
+  color: #666;
+}
+
+.task-list .delete-btn {
+  margin-left: 10px;
+  background: none;
+  border: none;
+  color: #ff4444;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 2px 6px; /* Add padding to make it button-like */
+  border-radius: 4px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+.task-list .delete-btn:hover {
+  background-color: #ffebee; /* Light red background on hover */
+}
+
+.task-form-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  height: fit-content;
+}
+
+.task-form-container input {
+  flex-grow: 1;
+  padding: 5px;
+  border: 1px dashed #ccc;
+  cursor: pointer;
+}
+
+.task-form-container button {
+  padding: 5px 10px;
+  background: #6b46c1;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.detailed-form {
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 600px;
+}
+
+.detailed-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.detailed-form .form-group {
+  position: relative;
+}
+
+.detailed-form input,
+.detailed-form select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.detailed-form .error-alert {
+  background-color: #feefc3;
+  color: #856404;
+  border: 1px solid #ffeeba;
+  border-radius: 4px;
+  padding: 8px 12px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.detailed-form .error-icon {
+  background-color: #856404;
+  color: white;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.form-actions button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-actions .add-button {
+  background: #6b46c1;
+  color: white;
+}
+
+.form-actions button:first-child {
+  background: #fff;
+  color: #6b46c1;
+  border: 1px solid #6b46c1;
+}
+
+/* ################################################ */

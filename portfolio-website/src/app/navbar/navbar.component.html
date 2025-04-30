@@ -1,0 +1,20 @@
+<nav class="navbar">
+  <div class="navbar-brand">
+    <span class="brand-title">Swetha Sri</span>
+  </div>
+  <button class="mobile-toggle" (click)="toggleMobileMenu()">
+    <i class="fas fa-bars" *ngIf="!isMobileMenuOpen"></i>
+    <i class="fas fa-times" *ngIf="isMobileMenuOpen"></i>
+  </button>
+  <ul class="nav-links" [ngClass]="{'open': isMobileMenuOpen}">
+    <li><a routerLink="/" routerLinkActive="active">Home</a></li>
+    <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+    <li><a routerLink="/projects" routerLinkActive="active">Projects</a></li>
+    <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+  </ul>
+  <div class="background-decor">
+    <div class="decor decor1"></div>
+    <div class="decor decor2"></div>
+    <div class="decor decor3"></div>
+  </div>
+</nav>

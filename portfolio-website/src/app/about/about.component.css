@@ -1,0 +1,326 @@
+/* About Hero Section */
+.about-hero {
+    position: relative;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f7c1bb, #e8b5e0);
+    padding: 3rem 2rem;
+    overflow: hidden;
+  }
+  
+  .about-content {
+    text-align: center;
+    max-width: 800px;
+    z-index: 1;
+  }
+  
+  .about-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    color: #4a3c6b;
+    margin: 0;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease-out forwards;
+  }
+  
+  .about-subtitle {
+    font-family: 'Lora', serif;
+    font-size: 1.6rem;
+    color: #5c5c5c;
+    margin: 1.5rem 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease-out 0.3s forwards;
+  }
+  
+  .background-decor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+  }
+  
+  .decor {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(247, 167, 160, 0.6);
+    animation: sparkle 10s infinite ease-in-out;
+  }
+  
+  .decor1 {
+    width: 50px;
+    height: 50px;
+    top: 20%;
+    left: 15%;
+    animation-delay: 0s;
+  }
+  
+  .decor2 {
+    width: 70px;
+    height: 70px;
+    top: 50%;
+    left: 80%;
+    animation-delay: 3s;
+  }
+  
+  .decor3 {
+    width: 40px;
+    height: 40px;
+    top: 70%;
+    left: 30%;
+    animation-delay: 6s;
+  }
+  
+  /* Skills Section */
+  .skills-section {
+    padding: 2rem 2rem;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #4a3c6b;
+    margin-bottom: 2rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .skill-card {
+    background: linear-gradient(135deg, #f7e4e3, #e8e4f5);
+    border-radius: 15px;
+    padding: 2rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+  
+  .skill-card:nth-child(1) { animation-delay: 0.2s; }
+  .skill-card:nth-child(2) { animation-delay: 0.4s; }
+  .skill-card:nth-child(3) { animation-delay: 0.6s; }
+  .skill-card:nth-child(4) { animation-delay: 0.8s; }
+  
+  .skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(247, 167, 160, 0.3);
+  }
+  
+  .skill-icon {
+    font-size: 2.5rem;
+    color: #f7a7a0;
+    margin-bottom: 1rem;
+    transition: transform 0.3s;
+  }
+  
+  .skill-card:hover .skill-icon {
+    transform: scale(1.2);
+  }
+  
+  .skill-card h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    color: #4a3c6b;
+    margin: 0.5rem 0;
+  }
+  
+  .skill-card p {
+    font-family: 'Lora', serif;
+    font-size: 1rem;
+    color: #5c5c5c;
+  }
+  
+  /* Timeline Section */
+  .timeline-section {
+    padding: 2rem 2rem;
+    background: linear-gradient(135deg, #b4e4d6, #f7c1bb);
+  }
+  
+  .timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .timeline::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background: #f7a7a0;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    position: relative;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+  
+  .timeline-item:nth-child(1) { animation-delay: 0.2s; }
+  .timeline-item:nth-child(2) { animation-delay: 0.4s; }
+  .timeline-item:nth-child(3) { animation-delay: 0.6s; }
+  
+  .timeline-content {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 45%;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .timeline-item:nth-child(odd) .timeline-content {
+    margin-right: 55%;
+  }
+  
+  .timeline-item:nth-child(even) .timeline-content {
+    margin-left: 55%;
+  }
+  
+  .timeline-content::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+  }
+  
+  .timeline-item:nth-child(odd) .timeline-content::before {
+    border-left-color: #fff;
+    right: -20px;
+  }
+  
+  .timeline-item:nth-child(even) .timeline-content::before {
+    border-right-color: #fff;
+    left: -20px;
+  }
+  
+  .timeline-content h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    color: #4a3c6b;
+    margin: 0 0 0.5rem;
+  }
+  
+  .timeline-content p {
+    font-family: 'Lora', serif;
+    font-size: 1rem;
+    color: #5c5c5c;
+  }
+  
+  .timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: #f7a7a0;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  
+  /* Animations */
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes sparkle {
+    0% {
+      transform: scale(1) translateY(0);
+      opacity: 0.5;
+    }
+    50% {
+      transform: scale(1.2) translateY(-30px);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1) translateY(0);
+      opacity: 0.5;
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-hero {
+      min-height: 50vh;
+      padding: 2rem 1rem;
+    }
+  
+    .about-title {
+      font-size: 2.5rem;
+    }
+  
+    .about-subtitle {
+      font-size: 1.3rem;
+    }
+  
+    .skills-section, .timeline-section {
+      padding: 2rem 1rem;
+    }
+  
+    .section-title {
+      font-size: 2rem;
+    }
+  
+    .skills-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .timeline::before {
+      left: 20px;
+    }
+  
+    .timeline-item {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 3rem;
+    }
+  
+    .timeline-content {
+      width: 100%;
+      margin: 0 !important;
+    }
+  
+    .timeline-item::after {
+      left: 12px;
+    }
+  
+    .timeline-content::before {
+      border-right-color: #fff !important;
+      left: -20px !important;
+      right: auto !important;
+    }
+  }
